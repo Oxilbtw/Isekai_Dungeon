@@ -17,6 +17,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void Update()
     {
+        
         if (Vector3.Distance(target.position, transform.position) <=maxrange && Vector3.Distance(target.position, transform.position) >= minrange)
         {
             FollowPlayer();
