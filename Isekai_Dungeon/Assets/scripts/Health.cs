@@ -12,7 +12,11 @@ public class Health : MonoBehaviour
 
         if (health <= 0)
         {
+<<<<<<< Updated upstream
             Destroy(gameObject);//if hp = 0, player death
+=======
+            Die();//if hp = 0, player death
+>>>>>>> Stashed changes
         }
     }
 
@@ -25,4 +29,12 @@ public class Health : MonoBehaviour
             health = maxHealth;
         }
     }
+<<<<<<< Updated upstream
+=======
+    private void Die()
+    {
+        Debug.Log("Dead");
+        Destroy(gameObject);
+    }
+>>>>>>> Stashed changes
 }

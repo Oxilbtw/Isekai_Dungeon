@@ -6,6 +6,15 @@ public class CollisionDamage : MonoBehaviour
 {
     public int collisionDamage = 10;
     public string collisionTag;
+<<<<<<< Updated upstream
+=======
+    public Transform playerTransform;
+
+    void Start()
+    {
+        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+    }
+>>>>>>> Stashed changes
 
     private void OnCollisionEnter2D(Collision2D coll)
     {
@@ -13,6 +22,12 @@ public class CollisionDamage : MonoBehaviour
         {
             Health health = coll.gameObject.GetComponent<Health>();
             health.TakeHit(collisionDamage); // -hp
+<<<<<<< Updated upstream
+=======
+
+            Vector2 damageDirection = playerTransform.position - transform.position;
+            coll.gameObject.GetComponent<PlayerMovement>().TakeDamage(damageDirection.normalized);
+>>>>>>> Stashed changes
         }
     }
 }

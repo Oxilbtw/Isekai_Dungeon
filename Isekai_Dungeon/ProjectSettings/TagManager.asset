@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+<<<<<<< Updated upstream
+=======
+  - StaticObject
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -13,8 +17,13 @@ TagManager:
   - Water
   - UI
   - Player
+<<<<<<< Updated upstream
   - 
   - 
+=======
+  - StaticObject
+  - wallLayer
+>>>>>>> Stashed changes
   - 
   - 
   - 
